@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>National Parks API</title>
+        <link  rel="stylesheet" href="main.css" type="text/css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Search National Parks</h1>
+            <form class="submitForm">
+                <fieldset>
+                    <legend>Search</legend>
+                    Search by state<input type="text" id="userInput" placeholder="State EX:NY" maxlength="2" required>
+                    Number of parks<input type="number" id="numberInput" value="10" placeholder="10" min="1" max="10" required>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <ul id="results" class="hidden"></ul>
+            <p id="jsErrorMessage"></p>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
